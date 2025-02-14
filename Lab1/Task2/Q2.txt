@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Q2</title>
+</head>
+<body>
+    <h1 align="center">Practice 4:</h1>
+    <h1 align="center">PREs, LISTs and Hard Rules</h1>
+    <hr>
+    <h3>&lt;PRE&gt; </h3>
+    <pre>
+        
+The PRE command uses a pre-set format from a device used to create a file, especially in cases of a word processor created document.
+It is an easy way to convert text documents to Web documents. Turn on with&lt;PRE&gt; and turn off with &lt;/PRE&gt;.
+    </pre>
+    
+    <h3>&lt;LIST&gt; </h3>
+    <Pre>
+Lists can be either order or unordered. Unordered lists use symbols for display, ordered lists use numbers.
+
+Unordered lists have symbols to choose from as in the following example. Ordered lists use numbers. Some lists are nested within other lists.
+    </Pre>
+    <ul style="list-style-type: square;">
+        <li>circle (default)</li>
+        <li>square</li>
+    </ul>
+    <ul style="list-style-type: disc;">
+        <li>moon</li>
+        <ol>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ol>
+    </ul>
+
+    <h3>The Hard Rule</h3>
+    <hr style="width: 500">
+    <hr style="width: 400">
+    <hr style="width: 300">
+    <hr style="width: 200">
+    <hr style="width: 100">
+</body>
+</html>

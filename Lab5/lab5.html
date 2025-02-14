@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab5</title>
+</head>
+<body>
+    <script >
+
+        
+        // Q1 :
+        var tx = prompt("Enter String:");
+        var cnt = 0;
+        for(var i = 0; i < tx.length; i++){
+            if(tx[i] === 'e') {
+            cnt++;
+            }
+        }
+        alert("The Number of 'e': " + cnt);
+         
+        // Q2 :
+       
+        var tx = prompt("Enter a Tx to check if it palindrome: ");
+        var cs = prompt("Is sensitivity {Y or N}");
+        if(cs ='N') {
+        tx = tx.toLowerCase();
+        }
+        if(tx === tx.split('').reverse().join('')){
+            alert("string is a palindrome.");
+        } else {
+            alert("string is not a palindrome.");
+        }
+      
+        var cr = prompt("Enter color { R or B or G}");
+        var nm = prompt("Enter your name:");
+        var tel_Num = prompt("Enter your telephone number:");
+        var mob_Num = prompt("Enter your mobile number:");
+        var em_Add = prompt("Enter your email address:");
+        if (cr === "R") cr = "red";
+        else if (cr === "B") cr = "blue";
+        else if (cr === "G") cr = "green";
+        document.write("<h2>User Information</h2>");
+        document.write('<span style="color:'+ cr +';">Name: </span>' + nm + "<br>");
+        document.write('<span style="color:'+ cr +';">Telephone Number: </span>' + tel_Num + "<br>");
+        document.write('<span style="color:'+ cr +';">Mobile Number: </span>' + mob_Num + "<br>");
+        document.write('<span style="color:'+ cr +';">Email Address: </span>' + em_Add + "<br>");
+        var dt = new Date();
+        document.write("Today's date is: "+dt.toDateString());
+    </script>
+</body>
+</html>
+
+
+
+
+

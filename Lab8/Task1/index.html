@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <table>
+                <tr>
+                    <td><label>Name:</label></td>
+                    <td><input type="text" id="name" ></td>
+                </tr>
+                <tr>
+                    <td><label >User ID:</label></td>
+                    <td><input type="number" id="user_id" ></td>
+                </tr>
+                <tr>
+                    <td><label >Country:</label></td>
+                    <td>
+                        <select name="country" onch="" id="country">
+                            <option selected="" value="Default">(select country)</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="KSA">KSA</option>
+                            <option value="UAE">UAE</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="USA">USA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label >Email:</label></td>
+                    <td><input type="email" id="email" ></td>
+                </tr>
+                <tr>
+                    <td><label >Password:</label></td>
+                    <td><input type="password" id="password" ></td>
+                </tr>
+                <tr>
+                    <td><label >Confirm Password:</label></td>
+                    <td><input type="password" id="cPassword" ></td>
+                </tr>
+                <tr>
+                    <td><label >Sex:</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Languages:</label></td>
+                    <td>
+                        <input type="checkbox" name="Uint" value="JavaScript" checked="">JavaScript
+                        <input type="checkbox" name="Uint" value="C#">C#
+                        <input type="checkbox" name="Uint" value="SQL Server">SQL Server
+                        <input type="checkbox" name="Uint" value="ASP.Net">ASP.Net
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="buttons">
+                        <button type="submit" onclick="registeration()">Submit</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+                <span id="error"></span>
+            </table>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+

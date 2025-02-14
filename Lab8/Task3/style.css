@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+#main_tx {
+    padding: 20px;
+    border: 2px solid black;
+    display: inline-block;
+    background-color: #fff;
+    margin: 20px;
+}
+table {
+    margin: 50px auto;
+    border-collapse: collapse;
+    width: 90%;
+    background: white;
+    border-radius: 10px;
+}
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background: #f64fcc;
+    color: white;
+}
+td label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+
+

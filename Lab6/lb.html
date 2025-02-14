@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sz = parseInt(prompt("Enter the size of array: "));
+        while(sz <= 0) {
+            alert("Please enter a valid Size:");
+            sz = parseInt(prompt("Enter the size of array: "));
+        }
+
+        var arr = [];
+        for(var i = 0; i < sz; i++){
+            var num = parseInt(prompt(`Enter number ${i + 1}: `));
+            arr.push(num);
+        }
+
+        while (true) {
+            var choice = prompt("Choose an option:\n a: Display array in original order\n b: Display array in ascending order\n c: Display array in descending order\n d: Display reversed array\n e: Display even numbers\n f: Display numbers divisible by a number\n g: Display concatenated string with *** ");
+            if (choice === 'a') {
+                alert(`The array: ${arr}`);
+            } else if (choice === 'b') {
+                function bubble_Sort(arr) {
+                    for(var i = 0; i < arr.length; i++) {
+                        for(var j = 0; j < arr.length - 1 - i; j++) {
+                            if (arr[j] > arr[j + 1]) { 
+                                [arr[j], arr[j + 1]] =[arr[j + 1],arr[j]];
+                            }
+                        }
+                    }
+                    return arr;
+                }
+                var res_as = bubble_Sort(arr);
+                alert(`Array in ascending order: ${res_as}`);
+            } else if (choice === 'c') {
+                function bubble_Sort(arr) {
+                    for(var i = 0; i < arr.length; i++) {
+                        for(var j = 0; j < arr.length - 1 - i; j++) {
+                            if (arr[j] < arr[j + 1]) { 
+                                [arr[j], arr[j + 1]] =[arr[j + 1],arr[j]];
+                            }
+                        }
+                    }
+                    return arr;
+                }
+                var res_des = bubble_Sort(arr);
+                alert(`Array in descending order: ${res_des}`);
+            } else if (choice === 'd') {
+                function reverse_arr(arr) {
+                    var new_arr = [];
+                    for(var i = sz-1 ; i >=0 ;i--){
+                        new_arr.push(arr[i]);
+                    }return new_arr ;
+                }
+                var res_rev = reverse_arr(arr);
+                alert(`Reversed array: ${res_rev}`);
+            } else if (choice === 'e') {
+                var even_nums = arr.filter(num => num % 2 === 0);
+                if(even_nums.length > 0) {
+                    alert(`Even numbers: ${even_nums}`);
+                }else{
+                    alert("Not founded!!!");
+                }
+            } else if(choice === 'f') {
+                var num = parseInt(prompt("Enter a num: "));
+                var divisible_nums = arr.filter(x => x % num === 0);
+                if(divisible_nums.length > 0) {
+                    alert(`Numbers divisible by ${num}: ${divisible_nums}`);
+                } else {
+                    alert("Not founded!!!");
+                }
+            } else if(choice === 'g') {
+                alert(`Concatenated string: ${arr.join('***')}`);
+            }else{
+                alert("Invalid choice. Try again!!!");
+                continue;
+            }
+            var ans = prompt("Do you want to continue? (Y/N)");
+            if (ans != 'Y') {
+                break;
+            }
+        }
+
+    </script>
+</body>
+</html>
+
+
