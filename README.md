@@ -27,6 +27,6 @@ The repository includes **10 lab projects**, each covering different aspects of 
 - Enhanced code efficiency and readability.  
 
 ## Explore the Labs  
-Each lab showcases a different aspect of front-end development, from basic structure to interactive and dynamic functionality.  
+- Each lab showcases a different aspect of front-end development, from basic structure to interactive and dynamic functionality.  
 ---
 
